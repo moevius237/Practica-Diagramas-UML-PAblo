@@ -1,28 +1,39 @@
 @startuml
 class Miembro_numerario{
-+String: e-mail
+ +String: e-mail
 }
 
 class Miembro_junta_directiva
 
 class Conferencia {
+ +Integer max_attendees
 
 }
 
 class Evento {
-
+ +date date
+ +String description
+ +void assign(|: Location)
 }
 
 class Reunión_de_la_junta_directiva
 
 class Localizacion {
-
++String description
+ +String address
 }
 
 class Persona{
++String name
+
 }
 
 class AAUOC{
++void newLocation(|: Location)
+    +void newEvent(e:Event)
+    +void newPerson(p:Person)
+    +void informEvent(e:Event)
+    +void register(m:Member,e:Event)
 
 }
 
