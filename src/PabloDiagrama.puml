@@ -40,10 +40,11 @@ class AAUOC{
 Miembro_numerario--|>Persona
 Miembro_junta_directiva--|>Miembro_numerario
 (Miembro_junta_directiva, Conferencia) --|> Evento
+Evento -- Miembro_numerario :attendsTo
 Evento --o AAUOC
-Evento -- Localizacion
+Evento -- Localizacion:isLocated in
 Localizacion --o AAUOC
 Persona --o AAUOC
-Reunión_de_la_junta_directiva -- Miembro_junta_directiva
-Conferencia -- Persona
+Reunión_de_la_junta_directiva -- Miembro_junta_directiva :attendsTo
+Conferencia -- Persona :attendsTo
 @enduml
