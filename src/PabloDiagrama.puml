@@ -38,7 +38,7 @@ class AAUOC{
 }
 
 Miembro_numerario--|>Persona
-Miembro_junta_directiva--|>Miembro_numerario
+Miembro_junta_directiva"0..*"--|>"0..*"Miembro_numerario
 (Miembro_junta_directiva, Conferencia) --|> Evento
 Evento -- Miembro_numerario :attendsTo
 Evento --o AAUOC
