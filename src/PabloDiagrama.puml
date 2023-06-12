@@ -27,14 +27,12 @@ class AAUOC{
 }
 
 Miembro_numerario--|>Persona
-Miembro_junta_directiva"0..*"--|>"0..*"Miembro_numerario
-(Miembro_junta_directiva, Conferencia)"0..*" --|> "0..*"Evento
-Evento -- Miembro_numerario :attendsTo
-
+Miembro_junta_directiva--|>Miembro_numerario
+(Miembro_junta_directiva, Conferencia) --|> Evento
 Evento --o AAUOC
-Evento"0..*" -- "1"Localizacion :isLocated in
-Localizacion"0..*" --o  AAUOC
-Persona"0..*" --o AAUOC
-Reunión_de_la_junta_directiva"0..*" -- "0..*"Miembro_junta_directiva :attendsTo
-Conferencia"0..*" -- "0..*"Persona :attendsTo
+Evento -- Localizacion
+Localizacion --o AAUOC
+Persona --o AAUOC
+Reunión_de_la_junta_directiva -- Miembro_junta_directiva
+Conferencia -- Persona
 @enduml
