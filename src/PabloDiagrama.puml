@@ -1,3 +1,5 @@
 @startuml
+class Miembro_numerario{
 
+}
 @enduml
