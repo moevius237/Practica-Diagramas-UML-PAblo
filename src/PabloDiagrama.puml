@@ -25,4 +25,7 @@ class Persona{
 class AAUOC{
 
 }
+
+Miembro_numerario--|>Persona
+
 @enduml
