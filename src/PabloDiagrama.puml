@@ -2,4 +2,27 @@
 class Miembro_numerario{
 
 }
+
+class Miembro_junta_directiva
+
+class Conferencia {
+
+}
+
+class Evento {
+
+}
+
+class Reunión_de_la_junta_directiva
+
+class Localizacion {
+
+}
+
+class Persona{
+}
+
+class AAUOC{
+
+}
 @enduml
