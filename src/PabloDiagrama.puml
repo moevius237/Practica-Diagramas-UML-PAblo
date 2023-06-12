@@ -1,6 +1,6 @@
 @startuml
 class Miembro_numerario{
-
++String: e-mail
 }
 
 class Miembro_junta_directiva
